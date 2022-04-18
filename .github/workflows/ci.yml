@@ -34,7 +34,7 @@ jobs:
   #     with:
   #       artifacts: "build/app/outputs/apk/debug/*.apk"
   #       token: ${{ secrets.TOKEN }}
-  
+
   build_apk:
     name: Build Flutter (Android)
     runs-on: ubuntu-latest
@@ -74,4 +74,4 @@ jobs:
         appId: ${{secrets.FIREBASE_ANDROID_APPID}}
         token: ${{secrets.FIREBASE_TOKEN}}
         groups: testers
-        file: build/app/outputs/apk/release/app-release.apk
+        file: /home/runner/work/flutter-news/flutter-news/build/app/outputs/bundle/release/app-release.aab
