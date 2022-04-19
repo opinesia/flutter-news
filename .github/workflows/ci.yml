@@ -49,8 +49,8 @@ jobs:
     - run: flutter pub get
     # - run: flutter build appbundle
     - run: flutter build apk
-    - name: Upload APK
-      uses: actions/upload-artifact
+    - name: Upload APKß
+      uses: actions/upload-artifact@master
       with:
         name: app-release
         path: build/app/outputs/flutter-apk/
