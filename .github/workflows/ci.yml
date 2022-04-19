@@ -68,6 +68,7 @@ jobs:
     #   uses: actions/download-artifact@master
     #   with:
     #     name: apk-build
+    - run: ls
     - name: Upload APK
       uses: wzieba/Firebase-Distribution-Github-Action@v1.3.2
       with:
