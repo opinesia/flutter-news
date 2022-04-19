@@ -53,7 +53,7 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: apk-build
-        path: build/app/outputs/bundle/release/apk-build.apk
+        path: /build/app/outputs/bundle/release/
   publish_apk:
     name: Upload Android to Firebase App Distribution
     needs: [build_apk]
@@ -75,4 +75,4 @@ jobs:
         appId: ${{secrets.FIREBASE_ANDROID_APPID}}
         token: ${{secrets.FIREBASE_TOKEN}}
         groups: testers
-        file: build/app/outputs/bundle/release/apk-build.apk
+        file: /build/app/outputs/bundle/release/apk-build.apk
