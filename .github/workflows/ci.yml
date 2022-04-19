@@ -49,7 +49,7 @@ jobs:
     - run: flutter pub get
     # - run: flutter build appbundle
     - run: flutter build apk
-    - name: Upload APKß
+    - name: Upload APK
       uses: actions/upload-artifact@master
       with:
         name: app-release
@@ -75,4 +75,4 @@ jobs:
         appId: ${{secrets.FIREBASE_ANDROID_APPID}}
         token: ${{secrets.FIREBASE_TOKEN}}
         groups: testers
-        file: /build/app/outputs/flutter-apk/app-release.apk
+        file: /home/runner/work/flutter-news/flutter-news/build/app/outputs/flutter-apk/app-release.apk
