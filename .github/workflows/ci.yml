@@ -54,5 +54,5 @@ jobs:
         appId: ${{secrets.FIREBASE_ANDROID_APPID}}
         token: ${{secrets.FIREBASE_TOKEN}}
         groups: testers
-        release_notes: "a new version"
+        releaseNotesFile: "a new version"
         file: app-release.apk
